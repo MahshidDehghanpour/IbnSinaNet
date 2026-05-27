@@ -74,14 +74,16 @@ Input (3 × 160 × 160)
 The proposed architecture, IbnSinaNet, comprises three fundamental components: Transition Down, Dense, and Squeeze Attention blocks. These components are illustrated with corresponding color coding of yellow, blue, and green, respectively. The blue block represents a dense block. A portion of this block is directed to the CSP block, while another portion is not forwarded to the CSP block. Ultimately, the output of the dense block is transmitted to the Squeeze Attention block. In addition, the use of group convolution lies in the proposed architecture.
 
 <p align="center">
-  <img width="1595" height="666" alt="fig1" src="https://github.com/user-attachments/assets/3ec9471d-c7af-44fa-89a5-b247ea6a692a" />
+       <img width="1299" height="591" alt="Ostovane for IbnSinaNet" src="https://github.com/user-attachments/assets/bd0ff29a-55a5-491d-84cc-68e093fd6ceb" />
+
   <br>
   <em>The detailed schematic illustration of the IbnSinaNet architecture. G indicates the group of subjects.</em>
 </p>
 
 
 <p align="center">
-       <img width="848" height="827" alt="fig3" src="https://github.com/user-attachments/assets/ad4170cf-7e2c-4d8c-bdd9-9a5cfe1208e2" />
+      <img width="3508" height="2480" alt="DPR (e)" src="https://github.com/user-attachments/assets/c46c462b-60dd-458c-9de0-d5b07c006458" />
+
   <br>
   <em>The hierarchical illustration of IbnSinaNet architecture. IbnSinaNet is a hybrid deep learning model combining Transition Down
 Block, Dense Block, Squeeze-Attention Block. The Dense Blocks are categorized into two groups, including DenseNet Blocks
@@ -411,17 +413,16 @@ Results are stored in `all_results.json` under the `ablation` key. Each configur
 The segmentation results of the proposed approach on the test set are visually represented in the following figure, which displays the outcomes on slices from the same patient, extracted from three distinct regions of the brain. An axial slice of a subject is shown, illustrating the ground truth segmentations alongside the segmentations produced by the proposed method. False positive and false negative pixels are distinctly marked in red and green, respectively. The predicted lesions mask closely resembles the ground truth mask, indicating that the proposed approach accurately segments the majority of lesions. The mask highlighting false positive and false negative pixels further corroborates that the model effectively detected most of the Flair MS lesions. Also, our proposed method demonstrates a remarkable ability to accurately segment MS plaques, including those that are very small in size. This level of precision in segmentation is evident and noteworthy.
 
 <p align="center">
-  <img width="1032" height="917" alt="fig2" src="https://github.com/user-attachments/assets/ce17f501-fa34-41af-b525-9833f3095a4b" />
+ <img width="732" height="572" alt="False Positive and False Negative" src="https://github.com/user-attachments/assets/bbd56ae4-8649-4556-93fd-d03151843e89" />
   <br>
-  <em>(a, e, i) Axial slice of a subject, (b, f, j) The ground truth segmentations, (c, g, k) The segmentations obtained by the proposed approach, (d, h, l) The false positive and false negative pixels distinguished in red and green pixels respectively.</em>
+  <em> (a, e, i) Axial slice of a subject, (b, f, j) The ground truth segmentations, (c, g, k) The segmentations obtained by the proposed approach, (d, h, l) The false positive and false negative pixels distinguished in red and green pixels respectively.</em>
 </p>
 
 <p align="center">
-       <img width="787" height="865" alt="fig4" src="https://github.com/user-attachments/assets/39cc5603-1f51-417a-8702-97d0d0f68d64" />
+      <img width="647" height="623" alt="hitmaps" src="https://github.com/user-attachments/assets/4a46011c-8a0f-4e16-865c-7860e3605847" />
+
   <br>
-  <em>(a, d, g) Axial slice of a subject with the lesion highlighted in yellow; b, e, h) Segmented lesion utilizing the
-proposed method, indicated in blue; c, f, i) False positive and false negative pixels distinguished by red and green, respectively.
-</em>
+  <em> (a, d, g) Axial slice of a subject with the lesion highlighted in yellow; (b, e, h) Segmented lesion utilizing the proposed method, indicated in blue; (c, f, i) False positive and false negative pixels distinguished by red and green, respectively.</em>
 </p>
 
 ## Reproducibility
